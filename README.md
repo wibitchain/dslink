@@ -1,4 +1,4 @@
-# Sidetree Node.js implementation
+# DsLink Node.js implementation
 The Node.js implementation of a blockchain-agnostic Sidetree Node using TypeScript.
 
 [![Build Status](https://travis-ci.org/decentralized-identity/sidetree.svg?branch=master)](https://travis-ci.org/decentralized-identity/sidetree)
