@@ -20,4 +20,4 @@ See the [implementation document](docs/implementation.md) for the detailed descr
 ## Docker
 > NOTE: 2019-08-13: docker-compose out-of-date, needs to be udpated.
 
-The Sidetree components are available via docker containers . Please see the [docker document](docs/docker.md) to find out details on building and running.
+The Sidetree components are available via docker containers . Please see the docker document to find out details on building and running.
