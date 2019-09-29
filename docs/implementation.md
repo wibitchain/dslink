@@ -1,4 +1,4 @@
-# Sidetree Node.js Implementation Document
+# DsLink Node.js Implementation Document
 
 This document focuses on the Node.js implementation of the Sidetree protocol.
 
@@ -8,7 +8,7 @@ This document focuses on the Node.js implementation of the Sidetree protocol.
 
 ## Node Types
 
-There will exist several Sidetree node configurations, which offer a variety of modes that support different features and trade-offs. The choice to run one type or another largely depends on the type of user, machine, and intent the operator has in mind.
+There will exist several DsLink node configurations, which offer a variety of modes that support different features and trade-offs. The choice to run one type or another largely depends on the type of user, machine, and intent the operator has in mind.
 
 ### Full Node
 
@@ -22,11 +22,11 @@ A light node is a node that retains the ability to independently resolve DIDs wi
 
 ## Observer
 
-The _Observer_ watches the public blockchain to identify Sidetree operations, then parses the operations into data structures that can be used for efficient DID resolutions.
+The _Observer_ watches the public blockchain to identify DsLink operations, then parses the operations into data structures that can be used for efficient DID resolutions.
 The primary goals for the _Observer_ are to:
 1. Maximize ingestion processing rate.
 1. Allow horizontal scaling for high DID resolution throughput.
-1. Allow sharing of the processed data structure by multiple Sidetree nodes to minimize redundant computation.
+1. Allow sharing of the processed data structure by multiple DsLink nodes to minimize redundant computation.
 
 The above goals lead to the design decision of minimal processing of the operations at the time of ingestion, and deferring the heavy processing such as signature validations to the time of DID resolution.
 
