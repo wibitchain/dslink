@@ -1,32 +1,33 @@
 // NOTE: Aliases to classes and interfaces are used for external consumption.
 
 // Core service exports.
-import SidetreeCore from './core/Core';
-import SidetreeConfig from './core/models/Config';
+import DsLinkCore from './core/Core';
+import DsLinkConfig from './core/models/Config';
 import {
-  ResponseModel as SidetreeResponseModel,
-  Response as SidetreeResponse
+ResponseModel as DsLinkResponseModel,
+Response as DsLinkResponse
 } from './common/Response';
 
 export {
-  SidetreeConfig,
-  SidetreeCore,
-  SidetreeResponse,
-  SidetreeResponseModel
+DsLinkConfig,
+DsLinkCore,
+DsLinkResponse,
+DsLinkResponseModel
 };
 
 // Blockchain service exports.
-import SidetreeBitcoinProcessor from './bitcoin/BitcoinProcessor';
-import { IBitcoinConfig as ISidetreeBitcoinConfig } from './bitcoin/IBitcoinConfig';
+import DsLinkBitcoinProcessor from './bitcoin/BitcoinProcessor';
+import { IBitcoinConfig as IDsLinkBitcoinConfig } from './bitcoin/IBitcoinConfig';
 
 export {
-  ISidetreeBitcoinConfig,
-  SidetreeBitcoinProcessor
+IDsLinkBitcoinConfig,
+DsLinkBitcoinProcessor
 };
 
 // IPFS service exports.
-import SidetreeIpfsService from './ipfs/RequestHandler';
+import DsLinkIpfsService from './ipfs/RequestHandler';
 
 export {
-  SidetreeIpfsService
+DsLinkIpfsService
 };
+
