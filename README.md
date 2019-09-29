@@ -1,10 +1,10 @@
 ## [DsLink自主身份](http://www.dslink.net/)
 # DsLink Node.js implementation
-The Node.js implementation of a blockchain-agnostic Sidetree Node using TypeScript.
+The Node.js implementation of a blockchain-agnostic DsLink Node using TypeScript.
 
-[![Build Status](https://travis-ci.org/decentralized-identity/sidetree.svg?branch=master)](https://travis-ci.org/decentralized-identity/sidetree)
+[![Build Status](https://travis-ci.org/decentralized-identity/DsLink.svg?branch=master)](https://travis-ci.org/decentralized-identity/DsLink)
 
-See the [protocol document](docs/protocol.md) for the full Sidetree protocol specification.
+See the [protocol document](docs/protocol.md) for the full DsLink protocol specification.
 
 See the [implementation document](docs/implementation.md) for the detailed description of this implementation.
 
@@ -21,4 +21,4 @@ See the [implementation document](docs/implementation.md) for the detailed descr
 ## Docker
 > NOTE: 2019-08-13: docker-compose out-of-date, needs to be udpated.
 
-The Sidetree components are available via docker containers . Please see the docker document to find out details on building and running.
+The DsLink components are available via docker containers . Please see the docker document to find out details on building and running.
