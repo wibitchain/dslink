@@ -16,7 +16,7 @@ A full node offers the largest set of features and highest resolution performanc
 
 ### Light Node
 
-A light node is a node that retains the ability to independently resolve DIDs without relying on a trusted party or trusted assertions by other nodes, while minimizing the amount of bandwidth and data required to do so. Light nodes run a copy of the target system's blockchain node and fetch only minimal Sidetree data required to create an independent lookup table that enables just-in-time resolution of DIDs.
+A light node is a node that retains the ability to independently resolve DIDs without relying on a trusted party or trusted assertions by other nodes, while minimizing the amount of bandwidth and data required to do so. Light nodes run a copy of the target system's blockchain node and fetch only minimal DsLink data required to create an independent lookup table that enables just-in-time resolution of DIDs.
 
 > NOTE: Light node support is in development.
 
@@ -31,7 +31,7 @@ The primary goals for the _Observer_ are to:
 The above goals lead to the design decision of minimal processing of the operations at the time of ingestion, and deferring the heavy processing such as signature validations to the time of DID resolution.
 
 ## Versioning
-As the Sidetree protocol evolves, existing nodes executing an earlier version of the protocol need to upgrade to execute the newer version of the protocol while remaining backward compatible to processing of prior transactions and operations.
+As the DsLink protocol evolves, existing nodes executing an earlier version of the protocol need to upgrade to execute the newer version of the protocol while remaining backward compatible to processing of prior transactions and operations.
 
 ### Protocol Versioning Configuration
 The implementation exposes a JSON configuration file with the following schema for specifying protocol version progressions:
