@@ -1,6 +1,6 @@
 # DsLink Node.js Implementation Document
 
-This document focuses on the Node.js implementation of the Sidetree protocol.
+This document focuses on the Node.js implementation of the DsLink protocol.
 
 ## Overview
 
