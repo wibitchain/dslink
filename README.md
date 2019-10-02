@@ -1,4 +1,4 @@
-## [DsLink自主身份](http://www.dslink.net/)
+## [DsLink自主身份隐私保护](http://www.dslink.net/)
 # DsLink Node.js implementation
 The Node.js implementation of a blockchain-agnostic DsLink Node using TypeScript.
 
