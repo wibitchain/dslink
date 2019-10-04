@@ -80,7 +80,7 @@ Headers:
 Request Data Type：
 
     {
-        "code":"tx"         
+        "code":"tx code"         
     } 
     
 Return：true { 'success': 1, 'data': data }  or  false { 'success': 0 }
