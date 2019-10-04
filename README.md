@@ -12,6 +12,7 @@ Headers:
         'Authorization': 'Basic ' + Base64,    
         'Content-Type': 'application/x-www-form-urlencoded'   
     }
+    
 Request Data Type：
      'grant_type=client_credentials'  
 Return：True
@@ -29,6 +30,7 @@ Headers:
     {
         'Authorization': 'Bearer ' + access_token    
     }
+    
 Request Data Type：
      {} // optional  
 Return：True { 'success': 1, 'data': data } or { 'success': 0 }
@@ -60,10 +62,12 @@ Headers:
     {
         'Authorization': 'Basic ' + Base64,    
     }
+    
 Request Data Type：
     {
         "code":"tx"         
-    }   
+    } 
+    
 Return：True { 'success': 1, 'data': data } or { 'success': 0 }
 Data Type Example:
     { "phoneNum": "encrypted string"}
