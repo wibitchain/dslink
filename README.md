@@ -8,6 +8,7 @@ The implementation of a blockchain-agnostic DsLink using RESTful API.
 Action: POST 
 Path: /token
 Headers:
+
     {
         'Authorization': 'Basic ' + Base64,    
         'Content-Type': 'application/x-www-form-urlencoded'   
@@ -16,6 +17,7 @@ Headers:
 Request Data Type：
      'grant_type=client_credentials'  
 Return：True
+
     {
 	    "token_type": "bearer",      
 	    "access_token": "72ab415822b56cf0f9f93f07fe978d9aae859325",     
@@ -27,6 +29,7 @@ Return：True
 Action: POST 
 Path: /getMetaData
 Headers:
+
     {
         'Authorization': 'Bearer ' + access_token    
     }
@@ -34,7 +37,9 @@ Headers:
 Request Data Type：
      {} // optional  
 Return：True { 'success': 1, 'data': data } or { 'success': 0 }
+
 Data Type Example:
+
     {
       "nameKey": { "name": "name","idNum": "idCard","phoneNum": "phoneNum"}, 
       "metaData": [
@@ -59,16 +64,20 @@ Data Type Example:
 Action: POST 
 Path: /token
 Headers:
+
     {
         'Authorization': 'Basic ' + Base64,    
     }
     
 Request Data Type：
+
     {
         "code":"tx"         
     } 
     
 Return：True { 'success': 1, 'data': data } or { 'success': 0 }
+
 Data Type Example:
+
     { "phoneNum": "encrypted string"}
     
