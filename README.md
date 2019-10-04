@@ -42,7 +42,7 @@ Headers:
 Request Data Type：
      {} // optional  
      
-Return：True { 'success': 1, 'data': data } or { 'success': 0 }
+Return：true { 'success': 1, 'data': data }  or  false { 'success': 0 }
 
 Data Type Example:
 
@@ -83,7 +83,7 @@ Request Data Type：
         "code":"tx"         
     } 
     
-Return：True { 'success': 1, 'data': data } or { 'success': 0 }
+Return：true { 'success': 1, 'data': data }  or  false { 'success': 0 }
 
 Data Type Example:
 
