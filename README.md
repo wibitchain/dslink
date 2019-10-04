@@ -8,6 +8,7 @@ The implementation of a blockchain-agnostic DsLink using RESTful API.
 Action: POST 
 
 Path: /token
+
 Headers:
 
     {
@@ -16,7 +17,8 @@ Headers:
     }
     
 Request Data Type：
-     'grant_type=client_credentials'  
+     'grant_type=client_credentials' 
+     
 Return：True
 
     {
@@ -30,6 +32,7 @@ Return：True
 Action: POST 
 
 Path: /getMetaData
+
 Headers:
 
     {
@@ -38,6 +41,7 @@ Headers:
     
 Request Data Type：
      {} // optional  
+     
 Return：True { 'success': 1, 'data': data } or { 'success': 0 }
 
 Data Type Example:
@@ -66,6 +70,7 @@ Data Type Example:
 Action: POST 
 
 Path: /token
+
 Headers:
 
     {
