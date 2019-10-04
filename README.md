@@ -6,6 +6,7 @@ The implementation of a blockchain-agnostic DsLink using RESTful API.
 # 1. Obtain OAuthaccess Token
 
 Action: POST 
+
 Path: /token
 Headers:
 
@@ -27,6 +28,7 @@ Return：True
  # 2. Obtain MetaData:
  
 Action: POST 
+
 Path: /getMetaData
 Headers:
 
@@ -62,6 +64,7 @@ Data Type Example:
 # 3. Obtain blockchain Data:
  
 Action: POST 
+
 Path: /token
 Headers:
 
