@@ -1,24 +1,70 @@
 ## [DsLink自主身份隐私保护](http://www.dslink.net/)
-# DsLink Node.js implementation
-The Node.js implementation of a blockchain-agnostic DsLink Node using TypeScript.
+# DsLink implementation
 
-[![Build Status](https://travis-ci.org/decentralized-identity/DsLink.svg?branch=master)](https://travis-ci.org/decentralized-identity/DsLink)
+The implementation of a blockchain-agnostic DsLink using RESTful API.
 
-See the [protocol document](docs/protocol.md) for the full DsLink protocol specification.
+# 1. Obtain OAuthaccess Token
 
-See the [implementation document](docs/implementation.md) for the detailed description of this implementation.
-
-
-## Contribution Guidelines:
-
-1. Must pass `npm run test`.
-1. Must pass `npm run lint`.
-1. Prefix an interface that require implementation with `I`. e.g. `ITransactionProcessor`.
-1. Suffix a data-holder interface (without definition of methods) with `Model`. e.g. `TransactionModel`.
-1. Use default export if class/interface name matches the file name.
-1. Sort imports.
-
-## Docker
-> NOTE: 2019-08-13: docker-compose out-of-date, needs to be udpated.
-
-The DsLink components are available via docker containers . Please see the docker document to find out details on building and running.
+Action: POST 
+Path: /token
+Headers:
+    {
+        'Authorization': 'Basic ' + Base64,    
+        'Content-Type': 'application/x-www-form-urlencoded'   
+    }
+Request Data Type：
+     'grant_type=client_credentials'  
+Return：True
+    {
+	    "token_type": "bearer",      
+	    "access_token": "72ab415822b56cf0f9f93f07fe978d9aae859325",     
+	    "expires_in": 3600          
+    }
+    
+ # 2. Obtain MetaData:
+ 
+Action: POST 
+Path: /getMetaData
+Headers:
+    {
+        'Authorization': 'Bearer ' + access_token    
+    }
+Request Data Type：
+     {} // optional  
+Return：True { 'success': 1, 'data': data } or { 'success': 0 }
+Data Type Example:
+    {
+      "nameKey": { "name": "name","idNum": "idCard","phoneNum": "phoneNum"}, 
+      "metaData": [
+        {
+          "name": "name",
+          "key": [
+            { "idCard": "" },
+            { "name": "" }
+          ]
+        },
+        {
+          "name": "phoneNum",
+          "key": [ 
+            { "phoneNum": "" }
+          ]
+        }
+      ]
+    }
+    
+# 3. Obtain blockchain Data:
+ 
+Action: POST 
+Path: /token
+Headers:
+    {
+        'Authorization': 'Basic ' + Base64,    
+    }
+Request Data Type：
+    {
+        "code":"tx"         
+    }   
+Return：True { 'success': 1, 'data': data } or { 'success': 0 }
+Data Type Example:
+    { "phoneNum": "encrypted string"}
+    
