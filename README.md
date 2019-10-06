@@ -3,7 +3,7 @@
 
 The implementation of a blockchain-agnostic DsLink using RESTful API.
 
-# 1. Obtain OAuthaccess Token
+# 1. Obtain OAuth Access Token
 
 Action: POST 
 
