@@ -27,7 +27,7 @@ Return：True
 	    "expires_in": 3600          
     }
     
- # 2. Obtain MetaData:
+ # 2. Get MetaData:
  
 Action: POST 
 
